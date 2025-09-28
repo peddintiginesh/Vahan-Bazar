@@ -10,6 +10,10 @@ Build a two-wheeler marketplace web app where users can browse, compare, and sel
 ### Reason to Choose :
 Buying or selling a bike today takes too much time. People have to switch between multiple apps for price comparisons, EMI calculations,or even booking test rides. Sellers also struggle to reach genuine buyers. We wanted to bring everything into one simple platform – and that’s how Vahan Bazar was born.
 
+## Solution Overview:
+
+### Proposed Approach :
+Vahan Bazar provides a unified web platform where users can search, filter, compare, and sell two-wheelers with verified listings and a role-based login system.
 ![Main Page](https://github.com/peddintiginesh/Vahan-Bazar/blob/2188c626307ad991717412e4e358a0091de44933/Main.jpg)
 
 ### Key Features / Modules :
@@ -28,9 +32,17 @@ Buying or selling a bike today takes too much time. People have to switch betwee
 
 ### System Architecture:
 ![System_ArchiTect](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/System_Architecture.png)
-<p> The frontend (React + Tailwind) communicates with our Node.js/Express backend via REST APIs.
-PostgreSQL stores structured data like bike listings, while image files are kept in storage.
-Background services handle notifications like test ride confirmations.</p>
+**Data Flow Explanation:**
+
+1.User requests data from the frontend (browser).
+
+2.Frontend calls backend APIs.
+
+3.Backend processes requests, queries PostgreSQL database, and returns JSON responses.
+
+4.Frontend renders bike listings, comparisons, and details.
+
+5.Role-based authentication ensures Buyer & Seller access control.
 
 ### Technology Stack:
 
@@ -40,18 +52,35 @@ Background services handle notifications like test ride confirmations.</p>
             
 •	**Database**: PostgreSQL
 
+•   **ML/AI Frameworks**: Not used (future roadmap: price prediction)
+
+•   **APIs / Libraries**: Axios (API calls), JWT (authentication), React Router
+
+
 ### Algorithms & Models :
-•	No ML model is used in this version.
 
 •	Filtering & comparison are handled using custom algorithms in JavaScript.
 
 •	EMI calculation is done with a simple financial formula.
 
+•	**Model Training & Testing Approach**:
+Not applicable for current version (ML features can be added for price predictions in future).
+
+
+
 ### Data Handling :
 
-•	**Data Sources**: Manually added bike details & seller inputs.
+•	**Data Sources**:
+
+      Mocked data initially (images & specs from real listings)
+
+      Future: real-time API integration from two-wheeler marketplaces
     
-•	**Preprocessing**: Data is validated on both frontend & backend.
+•	**Preprocessing**:
+
+			Standardized bike attributes (brand, price, fuel, mileage, year, location)
+
+           Resized and optimized images for web display
     
 •	**Storage**: PostgreSQL (structured data) + file storage for images.
     
