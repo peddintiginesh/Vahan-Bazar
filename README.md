@@ -21,5 +21,60 @@ Buying or selling a bike today takes too much time. People have to switch betwee
     
     •	Responsive design for mobile & web
 **System Architecture**:
-![Main Page](https://github.com/peddintiginesh/Vahan-Bazar/blob/2188c626307ad991717412e4e358a0091de44933/Main.jpg)
+![System_ArchiTect](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/System_Architecture.png)
+
+**Technology Stack: **
+
+            •	Frontend: React, Tailwind CSS, TypeScript
+            
+            •	Backend: Node.js + Express
+            
+            •	Database: PostgreSQL
+
+**Algorithms & Models :**
+•	No ML model is used in this version.
+
+•	Filtering & comparison are handled using custom algorithms in JavaScript.
+
+•	EMI calculation is done with a simple financial formula.
+
+**Data Handling :**
+
+    •	Data Sources: Manually added bike details & seller inputs.
+    
+    •	Preprocessing: Data is validated on both frontend & backend.
+    
+    •	Storage: PostgreSQL (structured data) + file storage for images.
+    
+**Implementation Plan :**
+
+        1.	Initial setup – React + Node.js + PostgreSQL environment.
+        
+        2.	 Develop core modules (Auth, Sell Bike, Browse, EMI, Test Ride).
+        3.	 Integration of frontend & backend APIs.
+        4.	 Testing all features with sample data.
+        5.	 Final build deployment (ready for hosting).
+**Deployment & Scalability :**
+
+    •	Deployment Plan: Can be hosted on AWS or Azure.
+    
+    •	Scalability: System can add dealer dashboards, AI-driven recommendations, and online payments in future updates.
+
+**Team Credits – The Tech Weavers**
+
+Sai Kumar: Login & Register
+
+![LOGIN](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/Login.jpg)
+![Register](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/Register.jpg)
+
+Siddhu: EMI calculator & search filters
+![EMI Calculator](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/Emi.jpg)
+![Filter](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/Filter.jpg)
+Ginesh: Test ride bookings, Node APIs
+    ![Test_ride_section](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/Test_ride.jpg)
+
+Sravan Sai: Sell-your-bike flow, database setup
+![Sell_Bike Section](https://github.com/peddintiginesh/Vahan-Bazar/blob/00c5a7fedad797e09d979aac41fb87c90ce2b129/Sell_bike.jpg)
+\
+                               ** THANK YOU FOR WATCHING**
 
